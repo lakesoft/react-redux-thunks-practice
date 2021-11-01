@@ -7,7 +7,7 @@ import { RootState } from "../states/rootState";
 export const Banking: FC = () => {
   const dispatch = useDispatch();
   const { balance } = useSelector<RootState, BankingState>(
-    (rootState) => rootState.banking
+    (rootState) => rootState.bankingState
   );
 
   const depositHandler = () => {

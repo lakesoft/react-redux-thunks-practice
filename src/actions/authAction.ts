@@ -1,10 +1,9 @@
 export const AuthActionKind = {
-  ToggleLogin: 'TOGGLE_LOGIN'
-} as const
+  ToggleLogin: "TOGGLE_LOGIN"
+} as const;
 
 export type AuthAction = {
-  type: typeof AuthActionKind[keyof typeof AuthActionKind]
-}
+  type: typeof AuthActionKind[keyof typeof AuthActionKind];
+};
 
-export const toggleLogin = () => ({type: AuthActionKind.ToggleLogin})
-
+export const toggleLogin = () => ({ type: AuthActionKind.ToggleLogin });

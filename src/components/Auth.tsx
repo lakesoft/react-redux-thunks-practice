@@ -7,7 +7,7 @@ import { toggleLogin } from "../actions/authAction";
 export const Auth: FC = () => {
   const dispatch = useDispatch();
   const { isLoggedIn } = useSelector<RootState, AuthState>(
-    (rootState) => rootState.auth
+    (rootState) => rootState.authState
   );
 
   const loginHandler = () => {
